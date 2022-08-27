@@ -27,7 +27,7 @@ module.exports = {
   mode: "development",
   devServer: {
     static: path.resolve(__dirname, "./dist"),
-    open: true,
+    open: false,
     port: 4000,
   },
 };
