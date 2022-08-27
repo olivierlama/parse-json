@@ -16,6 +16,22 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.json$/,
+        include: path.resolve(__dirname, "src"),
+        type: "asset/resource",
+        generator: {
+          filename: "assets/[name][ext]",
+        },
+      },
+      {
+        test: /\.(jpg|png)$/,
+        include: path.resolve(__dirname, "src"),
+        type: "asset/resource",
+        generator: {
+          filename: "assets/images/[name][ext]",
+        },
+      },
     ],
   },
   plugins: [
