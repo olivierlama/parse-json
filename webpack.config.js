@@ -17,12 +17,16 @@ module.exports = {
         },
       },
       {
-        test: /\.json$/,
-        include: path.resolve(__dirname, "src"),
-        type: "asset/resource",
-        generator: {
-          filename: "assets/[name][ext]",
-        },
+        test: /\.css$/i,
+
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+          },
+        ],
       },
       {
         test: /\.(jpg|png)$/,
@@ -43,7 +47,7 @@ module.exports = {
   mode: "development",
   devServer: {
     static: path.resolve(__dirname, "./dist"),
-    open: false,
+    open: true,
     port: 4000,
   },
 };

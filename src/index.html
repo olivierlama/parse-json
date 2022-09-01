@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/images/favicon-32x32.png" />
-    <title>JSON Parser</title>
+    <title>JSON Parser</title>   
   </head>
   <body>
-    <h1>JSON Parser</h1>
-    <textarea name="" id="file-in-json" cols="30" rows="10"></textarea>
+    <div class="container">
+      <h1>JSON Parser</h1>
+      <form>
+        <fieldset>
+          <legend>Formulaire</legend>
+          <label for="json-in-name">JSON input file name:</label>
+          <input id="json-in-name" name="json-in-name"" type="file" accept=".json"></input>
+          <div class="row-button">
+            <div class="row-button-1"></div>
+          <button class="row-button-2" type="submit">Parse</button>
+          <div class="row-button-3"></div>
+         </div>
+         </fieldset>
+      </form>
+      <br>
+      <div class="result">
+        <label for="json-in-content">JSON input file content:</label>
+        <textarea id="json-in-content"></textarea>
+        <label>JSON Tokens:</label>
+        <textarea id="json-tokens"></textarea>
+        
+    </div>
   </body>
+  
 </html>

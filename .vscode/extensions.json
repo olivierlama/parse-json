@@ -3,6 +3,7 @@
     "mhutchie.git-graph",
     "eamodio.gitlens",
     "esbenp.prettier-vscode",
-    "PKief.material-icon-theme"
+    "pkief.material-icon-theme",
+    "ritwickdey.LiveServer"
   ]
 }

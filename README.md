@@ -1,5 +1,7 @@
 # parse-json
 
+[Use config for vscode](https://github.com/olivierlama/vscode-config)
+
 ## Objectives
 
 The **final** goal is to write a parser in basic language (Sage X3 language)
